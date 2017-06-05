@@ -1,7 +1,6 @@
 html {
   font-size: 10px;
-  background: url(http://i.imgur.com/b9r5sEL.jpg) bottom center;
-  background-size: cover;
+  background: #BAD5F0;
 }
 body,html {
   margin: 0;
@@ -9,36 +8,41 @@ body,html {
   font-family: sans-serif;
 }
 
+.drumkit{
+  margin-top: 200px;
+  margin-left: 2s00px;
+}
+
 .keys {
-  display: flex;
-  flex: 1;
-  min-height: 100vh;
   align-items: center;
   justify-content: center;
+
 }
 
 .key {
-  border: .4rem solid black;
-  border-radius: .5rem;
-  margin: 1rem;
+  border: .4rem solid #F97580;
+  border-radius: 50%;
+  margin: 0 auto;
   font-size: 1.5rem;
-  padding: 1rem .5rem;
+  padding: 1rem 1rem;
   transition: all .07s ease;
-  width: 10rem;
+  width: 8rem;
+  height: 8rem;
   text-align: center;
   color: white;
-  background: rgba(0,0,0,0.4);
+  background: #F97580;
   text-shadow: 0 0 .5rem black;
 }
 
 .playing {
   transform: scale(1.1);
-  border-color: #ffc600;
-  box-shadow: 0 0 1rem #ffc600;
+  border-color: #3d7e60;
+  box-shadow: 0 0 1rem #3d7e60;
 }
 
 kbd {
   display: block;
+  margin-top: 5px;
   font-size: 4rem;
 }
 
@@ -46,5 +50,82 @@ kbd {
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: .1rem;
-  color: #ffc600;
+  color: #EDE288;
+}
+
+
+
+#clap{
+  position: absolute;
+  transform: translateX(380px) translateY(220px);
+}
+
+#snare{
+  position: absolute;
+  transform: translateX(300px) translateY(140px);
+  width: 7rem;
+  height: 7rem;
+}
+
+#hihat{
+  position: absolute;
+  transform: translateX(230px) translateY(100px);
+  z-index: 1;
+  width: 5rem;
+  height:5rem;
+}
+
+#hihat kbd{
+  font-size: 2rem;
+}
+
+#kick{
+  position: absolute;
+  transform: translateX(450px) translateY(120px);
+  height: 9rem;
+  width: 9rem;
+}
+
+#kick kbd{
+  margin-top: 9px;
+}
+
+#tom{
+  position: absolute;
+  height: 7rem;
+  width: 7rem;
+  transform: translateX(430px) translateY(10px)
+}
+
+#ride{
+  position: absolute;
+  transform: translateX(540px) translateY(40px);
+}
+
+#boom{
+  position: absolute;
+  transform: translateX(350px) translateY(-80px);
+}
+
+#openhat{
+  position: absolute;
+  transform: translateX(320px) translateY(30px);
+  height: 7rem;
+  width: 7rem;
+}
+
+#openhat kbd{
+  font-size: 3rem;
+}
+
+#tink{
+  position: absolute;
+  height: 4rem;
+  width: 4rem;
+  transform: translateX(245px) translateY(20px);
+}
+
+#tink kbd{
+  font-size: 2rem;
+  margin-top: 0;
 }
