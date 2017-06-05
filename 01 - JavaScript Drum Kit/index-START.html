@@ -74,16 +74,17 @@
     }
 
     function removeTransition(e){
-      console.log(e.propertyName);
-      if (e.propertyName !== 'transform') return;
-      this.classList.remove('playing');
+      const key = document.querySelector(`.key[data-key = "${e.keyCode}"]`);
+      key.classList.remove('playing');
     }
 
-    const keys = document.querySelectorAll('.key');
-    console.log(keys);
-    keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+    // const keys = document.querySelectorAll('.key');
+    // console.log(keys);
+    // keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 
     window.addEventListener('keydown', playSound);
+    window.addEventListener('keyup', removeTransition);
+
 
 
 </script>

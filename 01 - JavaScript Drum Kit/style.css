@@ -9,18 +9,15 @@ body,html {
 }
 
 .drumkit{
-  margin-top: 200px;
-  margin-left: 2s00px;
-}
-
-.keys {
-  align-items: center;
-  justify-content: center;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
 }
 
 .key {
-  border: .4rem solid #F97580;
+  border: .4rem solid #5D83D6;
   border-radius: 50%;
   margin: 0 auto;
   font-size: 1.5rem;
@@ -54,22 +51,21 @@ kbd {
 }
 
 
-
 #clap{
   position: absolute;
-  transform: translateX(380px) translateY(220px);
+  transform: translateX(-25px)   translateY(350px);
 }
 
 #snare{
   position: absolute;
-  transform: translateX(300px) translateY(140px);
+  transform: translateX(-90px) translateY(240px);
   width: 7rem;
   height: 7rem;
 }
 
 #hihat{
   position: absolute;
-  transform: translateX(230px) translateY(100px);
+  transform: translateX(-160px) translateY(200px);
   z-index: 1;
   width: 5rem;
   height:5rem;
@@ -81,7 +77,7 @@ kbd {
 
 #kick{
   position: absolute;
-  transform: translateX(450px) translateY(120px);
+  transform: translateX(50px) translateY(220px);
   height: 9rem;
   width: 9rem;
 }
@@ -94,22 +90,22 @@ kbd {
   position: absolute;
   height: 7rem;
   width: 7rem;
-  transform: translateX(430px) translateY(10px)
+  transform: translateX(30px) translateY(120px)
 }
 
 #ride{
   position: absolute;
-  transform: translateX(540px) translateY(40px);
+  transform: translateX(-90px) translateY(130px);
 }
 
 #boom{
   position: absolute;
-  transform: translateX(350px) translateY(-80px);
+  transform: translateX(-40px) translateY(30px);
 }
 
 #openhat{
   position: absolute;
-  transform: translateX(320px) translateY(30px);
+  transform: translateX(130px) translateY(130px);
   height: 7rem;
   width: 7rem;
 }
@@ -122,7 +118,7 @@ kbd {
   position: absolute;
   height: 4rem;
   width: 4rem;
-  transform: translateX(245px) translateY(20px);
+  transform: translateX(-160px) translateY(130px);
 }
 
 #tink kbd{
